@@ -1,20 +1,20 @@
 // code small korar jonno function 
-
+// function to get innertext convert number return
 function getIdNumber(id){
     const elementNumber = parseInt(document.getElementById(id).innerText);
     return elementNumber;
 }
-
+// function to get 'id' innertext return
 function getIdString(id){
     const elementString = document.getElementById(id).innerText;
     return elementString;
 }
-
+// function to get 'id' element return
 function getId(id){
     const element = document.getElementById(id);
     return element;
 }
-
+// function to get 'class' all element return
 function getClass(className){
     const getClassName = document.getElementsByClassName(className);
     return getClassName;
