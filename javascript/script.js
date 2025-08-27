@@ -74,3 +74,7 @@ for(const copyBtn of copyBtns){
     })
 }
 
+// clear btn function 
+getId('clear-btn').addEventListener('click', function(){
+    getId('history-conteinar').innerHTML = '';
+})
