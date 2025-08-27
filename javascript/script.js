@@ -61,3 +61,16 @@ for(const callBtn of callBtns){
     })
 }
 
+
+// copy btn function 
+const copyBtns = getClass('copy-btn');
+let copyCount = getIdNumber('copy') + 1;
+for(const copyBtn of copyBtns){
+    copyBtn.addEventListener('click', function(){
+        const copyNumber = copyBtn.parentNode.parentNode.childNodes[3].childNodes[5].childNodes[1].innerText;
+        navigator.clipboard.writeText(copyNumber);
+        alert('নাম্বার কপি হয়েছে ' + copyNumber)
+        getId('copy').innerText = heartCount ++;
+    })
+}
+
