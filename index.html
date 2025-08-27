@@ -22,7 +22,7 @@
             </div>
             <ul class="flex gap-5">
                 <li class="bg-[#41ff6b1a] flex items-center gap-[10px] py-2 px-7 h-12 rounded-[50px]"><span id="heart-icon" class="font-bold text-[#000000]">0</span><img class="w-5 h-5" src="./assets/heart.png" alt=""></li>
-                <li class="bg-[#41ff6b1a] flex items-center gap-[10px] py-2 px-7 h-12 rounded-[50px]"><span class="font-bold text-[#000000]">100</span><img class="w-5" src="./assets/coin.png" alt=""></li>
+                <li class="bg-[#41ff6b1a] flex items-center gap-[10px] py-2 px-7 h-12 rounded-[50px]"><span id="coin" class="font-bold text-[#000000]">100</span><img class="w-5" src="./assets/coin.png" alt=""></li>
                 <li class="bg-[#00A63E] text-[#FFFFFF] flex items-center gap-[10px] py-2 px-7 h-12 rounded-[50px]"><span class="font-bold">2</span> Copy</li>
             </ul>
         </nav>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="text-content mt-4">
                         <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                        <p id="subtitle" class="text-[18px] text-[#5C5C5C]">National Emergency</p>
                         <div class="mt-6">
                             <span class="text-[#111111] text-3xl font-semibold">999</span>
                             <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
@@ -53,7 +53,64 @@
                     </div>
                     <div class="services-btn flex gap-2 mt-6">
                         <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+
+                    </div>
+                </div>
+                <div class="services-cart  bg-[#FFFFFF] p-8 rounded-xl shadow-[0px_2px_3px_rgba(0,0,0,0.15)]">
+                    <div class="images flex justify-between items-center">
+                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/police.png" alt=""></div>
+                        <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
+                    </div>
+                    <div class="text-content mt-4">
+                        <h1 class="text-xl text-[#111111] font-bold">পুলিশ</h1>
+                        <p class="text-[18px] text-[#5C5C5C]">Police</p>
+                        <div class="mt-6">
+                            <span class="text-[#111111] text-3xl font-semibold">999</span>
+                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">পুলিশ</span></div>
+                        </div>
+                    </div>
+                    <div class="services-btn flex gap-2 mt-6">
+                        <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+
+                    </div>
+                </div>
+                <div class="services-cart  bg-[#FFFFFF] p-8 rounded-xl shadow-[0px_2px_3px_rgba(0,0,0,0.15)]">
+                    <div class="images flex justify-between items-center">
+                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/fire-service.png" alt=""></div>
+                        <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
+                    </div>
+                    <div class="text-content mt-4">
+                        <h1 class="text-xl text-[#111111] font-bold">ফায়ার সার্ভিস</h1>
+                        <p class="text-[18px] text-[#5C5C5C]">Fire Service</p>
+                        <div class="mt-6">
+                            <span class="text-[#111111] text-3xl font-semibold">999</span>
+                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">ফায়ার</span></div>
+                        </div>
+                    </div>
+                    <div class="services-btn flex gap-2 mt-6">
+                        <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+
+                    </div>
+                </div>
+                <div class="services-cart  bg-[#FFFFFF] p-8 rounded-xl shadow-[0px_2px_3px_rgba(0,0,0,0.15)]">
+                    <div class="images flex justify-between items-center">
+                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/ambulance.png" alt=""></div>
+                        <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
+                    </div>
+                    <div class="text-content mt-4">
+                        <h1 class="text-xl text-[#111111] font-bold">অ্যাম্বুলেন্স</h1>
+                        <p class="text-[18px] text-[#5C5C5C]">Ambulance</p>
+                        <div class="mt-6">
+                            <span class="text-[#111111] text-3xl font-semibold">1994-999999</span>
+                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">স্বাস্থ্য</span></div>
+                        </div>
+                    </div>
+                    <div class="services-btn flex gap-2 mt-6">
+                        <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
 
                     </div>
                 </div>
@@ -63,16 +120,16 @@
                         <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
                     </div>
                     <div class="text-content mt-4">
-                        <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                        <h1 class="text-xl text-[#111111] font-bold">নারী ও শিশু সহায়তা</h1>
+                        <p class="text-[18px] text-[#5C5C5C]">Women & Child Helpline</p>
                         <div class="mt-6">
-                            <span class="text-[#111111] text-3xl font-semibold">999</span>
-                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
+                            <span class="text-[#111111] text-3xl font-semibold">109</span>
+                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সহায়তা</span></div>
                         </div>
                     </div>
                     <div class="services-btn flex gap-2 mt-6">
                         <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
 
                     </div>
                 </div>
@@ -82,16 +139,16 @@
                         <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
                     </div>
                     <div class="text-content mt-4">
-                        <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                        <h1 class="text-xl text-[#111111] font-bold">দুদক</h1>
+                        <p class="text-[18px] text-[#5C5C5C]">Anti-Corruption</p>
                         <div class="mt-6">
-                            <span class="text-[#111111] text-3xl font-semibold">999</span>
-                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
+                            <span class="text-[#111111] text-3xl font-semibold">106</span>
+                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সরকারি</span></div>
                         </div>
                     </div>
                     <div class="services-btn flex gap-2 mt-6">
                         <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
 
                     </div>
                 </div>
@@ -101,111 +158,54 @@
                         <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
                     </div>
                     <div class="text-content mt-4">
-                        <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                        <h1 class="text-xl text-[#111111] font-bold">বিদ্যুৎ বিভ্রাট</h1>
+                        <p class="text-[18px] text-[#5C5C5C]">Electricity Outage</p>
                         <div class="mt-6">
-                            <span class="text-[#111111] text-3xl font-semibold">999</span>
-                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
+                            <span class="text-[#111111] text-3xl font-semibold">16216</span>
+                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">বিদ্যুৎ</span></div>
                         </div>
                     </div>
                     <div class="services-btn flex gap-2 mt-6">
                         <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
 
                     </div>
                 </div>
                 <div class="services-cart  bg-[#FFFFFF] p-8 rounded-xl shadow-[0px_2px_3px_rgba(0,0,0,0.15)]">
                     <div class="images flex justify-between items-center">
-                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/emergency.png" alt=""></div>
+                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/brac.png" alt=""></div>
                         <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
                     </div>
                     <div class="text-content mt-4">
-                        <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                        <h1 class="text-xl text-[#111111] font-bold">ব্র্যাক</h1>
+                        <p class="text-[18px] text-[#5C5C5C]">Brac</p>
                         <div class="mt-6">
-                            <span class="text-[#111111] text-3xl font-semibold">999</span>
-                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
+                            <span class="text-[#111111] text-3xl font-semibold">16445</span>
+                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">এনজিও</span></div>
                         </div>
                     </div>
                     <div class="services-btn flex gap-2 mt-6">
                         <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
 
                     </div>
                 </div>
                 <div class="services-cart  bg-[#FFFFFF] p-8 rounded-xl shadow-[0px_2px_3px_rgba(0,0,0,0.15)]">
                     <div class="images flex justify-between items-center">
-                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/emergency.png" alt=""></div>
+                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/Bangladesh-Railway.png" alt=""></div>
                         <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
                     </div>
                     <div class="text-content mt-4">
-                        <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                        <h1 class="text-xl text-[#111111] font-bold">বাংলাদেশ রেলওয়ে</h1>
+                        <p class="text-[18px] text-[#5C5C5C]">Bangladesh Railway</p>
                         <div class="mt-6">
-                            <span class="text-[#111111] text-3xl font-semibold">999</span>
-                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
+                            <span class="text-[#111111] text-3xl font-semibold">163</span>
+                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">পরিবহন</span></div>
                         </div>
                     </div>
                     <div class="services-btn flex gap-2 mt-6">
                         <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
-
-                    </div>
-                </div>
-                <div class="services-cart  bg-[#FFFFFF] p-8 rounded-xl shadow-[0px_2px_3px_rgba(0,0,0,0.15)]">
-                    <div class="images flex justify-between items-center">
-                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/emergency.png" alt=""></div>
-                        <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
-                    </div>
-                    <div class="text-content mt-4">
-                        <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
-                        <div class="mt-6">
-                            <span class="text-[#111111] text-3xl font-semibold">999</span>
-                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
-                        </div>
-                    </div>
-                    <div class="services-btn flex gap-2 mt-6">
-                        <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
-
-                    </div>
-                </div>
-                <div class="services-cart  bg-[#FFFFFF] p-8 rounded-xl shadow-[0px_2px_3px_rgba(0,0,0,0.15)]">
-                    <div class="images flex justify-between items-center">
-                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/emergency.png" alt=""></div>
-                        <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
-                    </div>
-                    <div class="text-content mt-4">
-                        <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
-                        <div class="mt-6">
-                            <span class="text-[#111111] text-3xl font-semibold">999</span>
-                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
-                        </div>
-                    </div>
-                    <div class="services-btn flex gap-2 mt-6">
-                        <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
-
-                    </div>
-                </div>
-                <div class="services-cart  bg-[#FFFFFF] p-8 rounded-xl shadow-[0px_2px_3px_rgba(0,0,0,0.15)]">
-                    <div class="images flex justify-between items-center">
-                        <div class="bg-[#FFE3E2] p-[14px] w-[60px] rounded-xl"><img class="" src="./assets/emergency.png" alt=""></div>
-                        <i class="heart-icon-btn fa-regular fa-heart cursor-pointer hover:text-red-500"></i>
-                    </div>
-                    <div class="text-content mt-4">
-                        <h1 class="text-xl text-[#111111] font-bold">জাতীয় জরুরি সেবা</h1>
-                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
-                        <div class="mt-6">
-                            <span class="text-[#111111] text-3xl font-semibold">999</span>
-                            <div class="bg-[#F2F2F2] py-1 px-3 rounded-[10px] w-[103px]"><span class="text-lg text-[#5C5C5C]">সার্বজনীন</span></div>
-                        </div>
-                    </div>
-                    <div class="services-btn flex gap-2 mt-6">
-                        <button class="py-2 px-4 bg-[#FFFFFF] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#5C5C5C] cursor-pointer hover:bg-[#5C5C5C] hover:text-[#FFFFFF]"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="call-btn py-2 px-4 bg-[#00A63E] border-[1px] border-[#D4D6D5] rounded-[8px] flex-1 text-[#FFFFFF] cursor-pointer hover:bg-[#D4D6D5]"><i class="fa-solid fa-phone"></i> Call</button>
 
                     </div>
                 </div>
@@ -217,14 +217,8 @@
                     <button class=" w-[114px] h-[48px] rounded-[50px] font-semibold bg-[#00A63E] cursor-pointer hover:bg-[#D4D6D5]">Clear</button>
                 </div>
 
-                <div class="history-conteinar mt-2">
-                    <div class="hidtory-cart p-4 bg-[#FAFAFA] rounded-lg flex justify-between items-center">
-                        <div>
-                            <h2 class="text-lg text-[#111111]">জাতীয় জরুরি সেবা</h2>
-                            <span class="text-lg text-[#5C5C5C]">999</span> 
-                        </div>
-                        <span class="text-lg text-[#111111]">11:36:58 AM</span>
-                    </div>
+                <div id="history-conteinar" class="mt-2">
+                    
                 </div>
             </aside>
         </div>
