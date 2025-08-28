@@ -64,7 +64,7 @@ for(const callBtn of callBtns){
 
 // copy btn function 
 const copyBtns = getClass('copy-btn');
-let copyCount = getIdNumber('copy') + 1;
+let copyCount = getIdNumber('copy');
 for(const copyBtn of copyBtns){
     copyBtn.addEventListener('click', function(){
         const copyNumber = copyBtn.parentNode.parentNode.childNodes[3].childNodes[5].childNodes[1].innerText;
