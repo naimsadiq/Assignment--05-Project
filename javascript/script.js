@@ -52,10 +52,10 @@ for(const callBtn of callBtns){
         const newElement = document.createElement('div');
         newElement.innerHTML = `<div class="hidtory-cart p-4 mt-2 bg-[#FAFAFA] rounded-lg flex justify-between items-center">
                                         <div>
-                                            <h2 class="text-lg text-[#111111]">${title}</h2>
-                                            <span class="text-lg text-[#5C5C5C]">${callingNumber}</span> 
+                                            <h2 class="md:text-lg text-[14px] text-[#111111]">${title}</h2>
+                                            <span class="md:text-lg text-[14px] text-[#5C5C5C]">${callingNumber}</span> 
                                         </div>
-                                        <span class="text-lg text-[#111111]">${timeShow}</span>
+                                        <span class="md:text-lg text-[14px] text-[#111111]">${timeShow}</span>
                                     </div>`
         cardConteiner.appendChild(newElement);
     })
@@ -64,13 +64,13 @@ for(const callBtn of callBtns){
 
 // copy btn function 
 const copyBtns = getClass('copy-btn');
-let copyCount = getIdNumber('copy');
+let copyCount = getIdNumber('copy') + 1;
 for(const copyBtn of copyBtns){
     copyBtn.addEventListener('click', function(){
         const copyNumber = copyBtn.parentNode.parentNode.childNodes[3].childNodes[5].childNodes[1].innerText;
         navigator.clipboard.writeText(copyNumber);
         alert('নাম্বার কপি হয়েছে ' + copyNumber)
-        getId('copy').innerText = heartCount ++;
+        getId('copy').innerText = copyCount ++;
     })
 }
 
